@@ -1,0 +1,116 @@
+/* ==================== 1. VARIABLES (COLOR PALETTE) ==================== */
+:root {
+    /* We use HSL color values so we can easily swap to dark mode later */
+    --first-color: hsl(190, 64%, 22%);      /* Dark Navy Blue */
+    --title-color: hsl(190, 64%, 15%);      /* Almost Black Blue */
+    --text-color: hsl(190, 16%, 35%);       /* Slate Gray Text */
+    --body-color: hsl(190, 100%, 99%);      /* Soft Off-White Background */
+    --container-color: #fff;
+    
+    /* Font sizes and weights */
+    --body-font: 'Arial', sans-serif;
+    --big-font-size: 2.5rem;
+    --normal-font-size: 1rem;
+}
+
+/* ==================== 2. BASE STYLES ==================== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none; /* Removes the underline from links */
+}
+
+/* ==================== 3. NAV BAR LAYOUT ==================== */
+.header {
+    width: 100%;
+    background-color: var(--body-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.nav-bar {
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 968px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.logo {
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    color: var(--title-color);
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--first-color); /* Changes color when you hover over links */
+}
+
+/* ==================== 4. HOME HERO SECTION ==================== */
+.main-content {
+    max-width: 968px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.home-section {
+    padding: 7rem 0 2rem; /* Creates top space so the nav bar doesn't block it */
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.home-text h1 {
+    font-size: var(--big-font-size);
+    color: var(--title-color);
+    margin-bottom: 0.5rem;
+}
+
+.home-text h2 {
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.home-text p {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* ==================== 5. BUTTONS ==================== */
+.cta-button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.cta-button:hover {
+    background-color: hsl(190, 64%, 15%); /* Darkens button on hover */
+}

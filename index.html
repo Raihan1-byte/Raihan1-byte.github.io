@@ -2,24 +2,44 @@
 layout: default
 ---
 <P>This is a test. Hi my name is Raihan</P>
-<img src="Images\YellowPencil.jpg">
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width>
-    <title>Raihan's Portfolio</title>
-
-    <style></style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <!-- 1. This line connects your CSS file to style the page -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Helo, I'm Raihan</h1>
 
-    <h2>About me</h2>
+    <!-- This is the Main Navigation Bar -->
+    <header class="header">
+        <nav class="nav-bar">
+            <a href="#" class="logo">Alex.</a>
+            <div class="nav-menu">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Skills</a>
+            </div>
+        </nav>
+    </header>
 
-    <p>I am a student at sms, who codes python</p>
-    <p>My goal is to become really good at web design</p>
+    <!-- This is the Home / Hero Section -->
+    <main class="main-content">
+        <section class="home-section">
+            <div class="home-text">
+                <h1>Hi, I'm Alex</h1>
+                <h2>Frontend Developer</h2>
+                <p>Welcome to my brand new website. I build clean, beautiful, and responsive web applications.</p>
+                <button class="cta-button" type="button">Contact Me</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 2. This line connects your JavaScript file at the very bottom -->
+    <script src="main.js"></script>
 </body>
 </html>
